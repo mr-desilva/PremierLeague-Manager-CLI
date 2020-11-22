@@ -109,7 +109,7 @@ public class FootballClub extends SportsClub implements Comparable<FootballClub>
     @Override
     public int compareTo(FootballClub o){
         if (this.getNumberOfPoints() == o.getNumberOfPoints()){
-            return o.getGoalScored() - this.getGoalScored();
+            return o.getGoalScored() - this.getGoalsReceived();
         }else {
             return o.getNumberOfPoints() - this.getNumberOfPoints();
         }
