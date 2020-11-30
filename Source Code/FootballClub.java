@@ -1,6 +1,7 @@
+import java.io.Serializable;
 import java.util.Objects;
 
-public class FootballClub extends SportsClub implements Comparable<FootballClub> {
+public class FootballClub extends SportsClub implements Comparable<FootballClub>, Serializable {
     private int wins;
     private int draws;
     private int defeats;
@@ -109,7 +110,7 @@ public class FootballClub extends SportsClub implements Comparable<FootballClub>
     @Override
     public int compareTo(FootballClub o){
         if (this.getNumberOfPoints() == o.getNumberOfPoints()){
-            return o.getGoalScored() - this.getGoalsReceived();
+            return (o.getGoalScored() - o.goalsReceived) - (this.goalScored - this.getGoalsReceived());
         }else {
             return o.getNumberOfPoints() - this.getNumberOfPoints();
         }
