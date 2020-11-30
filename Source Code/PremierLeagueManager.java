@@ -69,8 +69,7 @@ public class PremierLeagueManager implements LeagueManager {
         System.out.println(matchList.get(0).getTeam1GoalScore());
         System.out.println(matchList.get(0).getTeam2());
         System.out.println(matchList.get(0).getTeam2GoalScore());
-        System.out.println(matchList.get(0).getDate());
-        System.out.println(matchList.get(0).toString());*/
+        System.out.println(matchList.get(0).getDate());*/
     }
 
     @Override
