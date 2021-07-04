@@ -602,9 +602,9 @@ public class PremierLeagueManager implements LeagueManager  {
         gridPaneButtons.add(buttonPlayRandomMatch,4,0);
         gridPaneButtons.add(buttonSearchMatches,6,0);
         gridPaneButtons.add(buttonViewPlayedMatches,8,0);
-        Image imageHomeBg = new Image("file:jg.jpg");
+        Image imageHomeBg = new Image("file:assets/jg.jpg");
         ImageView imageView = new ImageView(imageHomeBg);
-        Image imageHomeLeft = new Image("file:logo.jpg");
+        Image imageHomeLeft = new Image("file:assets/logo.jpg");
         ImageView imageView2 = new ImageView(imageHomeLeft);
         gridPaneCenter.add(imageView,0,0);
         gridPaneCenter.add(imageView2,20,0);
